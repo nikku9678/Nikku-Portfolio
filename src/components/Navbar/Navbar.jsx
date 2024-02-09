@@ -1,15 +1,15 @@
 import { useState } from "react"
 import "./Navbar.css"
-import {Link}  from 'react-router-dom'
+// import {Link}  from 'react-router-dom'
 export default function Navbar() {
   const [isNavExpanded, setIsNavExpanded] = useState(false)
 
   return (
     <nav className="navigation">
       <div className="nav-left">
-      <Link to="/" className="brand-name">
+      <a href="/" className="brand-name">
         Nikku
-      </Link>
+      </a>
       <button
         className="hamburger"
         onClick={() => {
@@ -26,19 +26,19 @@ export default function Navbar() {
       >
         <ul>
           <li>
-            <a href={"/"}>Home</a>
+            <a href="/">Home</a>
           </li>
           <li>
-            <a href={"/about"}>About</a>
+            <a href="/about">About</a>
           </li>
           <li >
-            <a href={"/education"}>Education</a>
+            <a href="/education">Education</a>
           </li>
           <li>
-            <a href={"/skills"}>Skills</a>
+            <a href="/skills">Skills</a>
           </li>
           <li>
-            <a href={"/projects"}>Projects</a>
+            <a href="/projects">Projects</a>
           </li>
           <li>
             <a href="/acheivements">Acheivements</a>
