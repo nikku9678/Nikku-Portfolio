@@ -1,6 +1,6 @@
 import React from "react";
 import nsecImg from '../../assets/nsec_logo.jpeg';
-import schoolImg from '../../assets/school.png';
+import schoolImg from '../../assets/School.png';
 import clgImg from '../../assets/images.png';
 import './Education.css'
 import Timeline from '@mui/lab/Timeline';
