@@ -1,15 +1,18 @@
 import { useState } from "react"
 import "./Navbar.css"
-// import {Link}  from 'react-router-dom'
+import {Link}  from 'react-router-dom'
 export default function Navbar() {
   const [isNavExpanded, setIsNavExpanded] = useState(false)
+  const handleShowOff = ()=>{
 
+    setIsNavExpanded(prev => !prev);
+  }
   return (
     <nav className="navigation">
       <div className="nav-left">
-      <a href="/" className="brand-name">
+      <Link to="/" className="brand-name">
         Nikku
-      </a>
+      </Link>
       <button
         className="hamburger"
         onClick={() => {
@@ -24,27 +27,27 @@ export default function Navbar() {
           isNavExpanded ? "navigation-menu expanded" : "navigation-menu"
         }
       >
-        <ul>
+        <ul  onClick={handleShowOff} >
           <li>
-            <a href="/">Home</a>
+            <Link to="/" >Home</Link>
           </li>
           <li>
-            <a href="/about">About</a>
+            <Link to="/about">About</Link>
           </li>
           <li >
-            <a href="/education">Education</a>
+            <Link to="/education">Education</Link>
           </li>
           <li>
-            <a href="/skills">Skills</a>
+            <Link to="/skills">Skills</Link>
           </li>
           <li>
-            <a href="/projects">Projects</a>
+            <Link to="/projects">Projects</Link>
           </li>
           <li>
-            <a href="/acheivements">Acheivements</a>
+            <Link to="/acheivements">Acheivements</Link>
           </li>
           <li>
-            <a href="/contact">Contact</a>
+            <Link to="/contact">Contact</Link>
           </li>
           
         </ul>
