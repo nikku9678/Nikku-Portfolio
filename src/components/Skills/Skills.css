@@ -1,0 +1,35 @@
+
+
+.skills .heading{
+  text-align: center;
+  font-size: 1.5rem;
+  margin: 20px;
+}
+.skills .swiper {
+  width: 60%;
+  border-radius: 10px;
+  height: 500px;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper {
+  margin-left: auto;
+  margin-right: auto;
+}

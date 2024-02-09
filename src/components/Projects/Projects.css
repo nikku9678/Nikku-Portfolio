@@ -1,0 +1,127 @@
+.project{
+  width: 80%;
+
+margin: auto;
+padding: 10px;
+/* border: 2px solid black; */
+font-family: monospace;
+/* border: 2px solid red; */
+font-family: 'Courier New', Courier, monospace;
+}
+.project h2{
+  text-align: center;
+  margin: 0;
+  padding: 10px;
+  font-size: 2rem;
+ 
+}
+.project h3{
+  font-size: 1rem;
+}
+.p-card{
+  display: flex;
+  flex-direction: column;
+  /* flex-wrap: wrap; */
+  gap: .5rem;
+  justify-content: space-around;
+}
+
+.project .card{
+  transition: all 500ms ease-in-out;
+  /* background-color: #eee; */
+  border-bottom: 2px solid black;
+  width: 85%;
+  margin: auto;
+  height: fit-content;
+  margin-top: 10px;
+  border-radius: 10px;
+  /* opacity: .9; */
+  box-shadow: 0 2px 2px 4px rgba(9, 9, 9, 0.23);
+  transition: all 500ms ease-in-out;
+  border-bottom: 2px solid black;
+  padding: 10px;
+}
+.card:hover{
+  background-color: white;
+  color: black;
+}
+.card .p-detail h2{
+  text-align: left;
+  font-size: 1.5rem;
+}
+.card .p-detail{
+  margin: 0 0;
+  padding: 5px;
+  /* border: 2px solid black; */
+}
+.item li{
+  list-style:circle;
+  margin: 2px 5px;
+}
+.p-detail h4{
+  padding-left: 4px;
+}
+.card ul li{
+  list-style: none;
+}
+.img{
+  /* border: 2px solid black; */
+}
+.card img{
+  margin: 0 15px;
+  width: 60px;
+  border-radius: 10px;
+}
+.card img{
+  width: 60px;
+}
+.card a{
+  color: white;
+}
+.card .p-detail button{
+  text-decoration: none;
+  padding: 10px 15px;
+  border: 1px solid grey;
+  background-color: black;
+  
+  margin-top: 10px;
+  border-radius: 10px;
+
+}
+.card .p-detail ul{
+  padding: 5px;
+  /* border: 2px solid black; */
+  margin-top: 5px;
+}
+
+
+@media only screen and (max-width:767px){
+  .project{
+    width: 95%;
+  }
+  .project h2{
+    font-size: 1.5rem;
+    margin: 10px;
+  }
+  .project .p-card{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    /* border: 2px solid red; */
+    gap: 30px;
+
+  }
+  .project .item li{
+    font-size: .9rem;
+  }
+  .p-detail h2{
+    padding: 0;
+    margin-top: 0;
+  }
+  .project .p.card .card{
+    width: 95%;
+    margin: auto;
+   
+  }
+}
