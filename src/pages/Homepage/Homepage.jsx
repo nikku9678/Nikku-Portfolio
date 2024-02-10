@@ -9,6 +9,7 @@ import Education from '../../components/Education/Education'
 import Contact from '../../components/Contact/Contact'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
+import Skills from '../../components/Skills/Skills'
 function Homepage() {
   AOS.init({
     duration: 650,
@@ -16,21 +17,28 @@ function Homepage() {
   });
   return (
     <div className='homepage'>
-      <div data-aos="zoom-out-down">
+      {/* <div data-aos="zoom-out-down">
       <Home/>
       </div>
-      <div data-aos="fade-left">
+      <div data-aos="zoom-out-down">
       <About/>
       </div>
-      <div data-aos="fade-right">
+      <div  data-aos="zoom-out-down">
       <Education/>
       </div>
-      <div data-aos="fade-left">
+      <div data-aos="zoom-out-down">
       <Projects/>
       </div>
-      <div data-aos="fade-left">
+      <div  data-aos="zoom-out-down">
       <Contact/>
       </div>
+      <Footer/> */}
+      <Home/>
+      <About/>
+      <Education/>
+      <Projects/>
+      <Skills/>
+      <Contact/>
       <Footer/>
     </div>
   )

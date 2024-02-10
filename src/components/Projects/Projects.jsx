@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import {data} from '../../Data/ProjectData'
-import Img from '../../assets/nikku_image.jpg'
+import Img from '../../assets/body_image.jpg'
 import './Projects.css'
 
 
@@ -20,14 +20,15 @@ function Projects() {
         </div>
         <div className='p-detail'>
           <h2>{data.title}</h2>
-          <h4>{data.tools}</h4>
+          <p><b>Tools used </b>:- <span>{data.tools}</span></p>
           <div className='item'>{data.description.map((item)=>(
             <>
             <li>{item}</li>
+            
             </>
           ))}</div>
-          <a href="/">view project</a>
         </div>
+     <a id='link' href={`${data.demo}`} target='_blank'>view project</a>
 
       </div>
       </>)}

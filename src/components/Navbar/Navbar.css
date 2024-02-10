@@ -25,6 +25,9 @@
   font-size: 1.5rem;
   margin-left: 1rem;
 }
+.brand-name img{
+  width: 100px;
+}
 .navigation-menu {
   margin-left: auto;
 }
@@ -90,6 +93,8 @@
     box-shadow: 0 2px 2px 4px rgba(9, 9, 9, 0.23);
     transition: all 500ms ease-in-out;
     border-bottom: 2px solid black;
+    /* border: 1px solid red; */
+    
   }
   .navigation-menu li {
     text-align: center;

@@ -16,7 +16,7 @@ function Education() {
     duration:650,
   })
   return (
-    <div className="edu" data-aos="fade-down">
+    <div className="edu">
       <h1>Education</h1>
       <Timeline className="time"  sx={{
         [`& .${timelineItemClasses.root}:before`]: {

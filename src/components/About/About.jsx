@@ -4,17 +4,17 @@ import Img from "../../assets/nikku_image.jpg";
 import { RingLoader } from "react-spinners";
 
 function About() {
-  const [loading,setLoading] =useState(false)
+  // const [loading,setLoading] =useState(false)
 
-  useEffect(()=>{
-    setLoading(true)
-    setTimeout(() => {
-      setLoading(false)
-    }, 1000);
-  },[])
+  // useEffect(()=>{
+  //   setLoading(true)
+  //   setTimeout(() => {
+  //     setLoading(false)
+  //   }, 1000);
+  // },[])
   return (
     <div>
-      {loading? <div className="loading"><RingLoader color="black" /></div>:<>
+      <>
       <div className="about">
         <div className="about-left">
           <h1>
@@ -40,7 +40,7 @@ function About() {
           <img src={Img} alt="" />
         </div>
       </div>
-      </>}
+      </>
     </div>
   );
 }

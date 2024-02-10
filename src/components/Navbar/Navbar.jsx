@@ -1,6 +1,7 @@
 import { useState } from "react"
 import "./Navbar.css"
 import {Link}  from 'react-router-dom'
+import Logo from '../../assets/logo.png';
 export default function Navbar() {
   const [isNavExpanded, setIsNavExpanded] = useState(false)
   const handleShowOff = ()=>{
