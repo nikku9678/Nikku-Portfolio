@@ -44,9 +44,9 @@ export default function Navbar() {
           <li>
             <Link to="/projects">Projects</Link>
           </li>
-          <li>
+          {/* <li>
             <Link to="/acheivements">Acheivements</Link>
-          </li>
+          </li> */}
           <li>
             <Link to="/contact">Contact</Link>
           </li>

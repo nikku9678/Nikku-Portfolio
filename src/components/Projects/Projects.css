@@ -1,6 +1,7 @@
 .project{
   width: 80%;
-
+  position: relative;
+  top: 80px;
 margin: auto;
 padding: 10px;
 /* border: 2px solid red; */
@@ -8,22 +9,35 @@ font-family: monospace;
 /* border: 2px solid red; */
 font-family: 'Courier New', Courier, monospace;
 }
-.project h2{
+.project h1{
   text-align: center;
   margin: 0;
   padding: 10px;
-  font-size: 2rem;
+  font-size: 1.5rem;
  
 }
-.project h3{
+.project h2{
   font-size: 1rem;
 }
+.model{
+  cursor: pointer;
+}
+.model-data{
+  width: 400px;
+  height: 300px;
+  border: 2px solid red;
+  position: absolute;
+}
 .project .p-card{
-  display: flex;
-  flex-direction: column;
-  /* flex-wrap: wrap; */
-  gap: .5rem;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+  justify-content: center;
+  gap: 1rem;
+padding-bottom: 30px;
+  margin-top: 1rem;
+}
+.project span{
+  font-size: .9rem;
 }
 
 .project .card{
@@ -40,16 +54,16 @@ font-family: 'Courier New', Courier, monospace;
   box-shadow: 0 2px 2px 4px rgba(9, 9, 9, 0.23);
   transition: all 500ms ease-in-out;
   border-bottom: 2px solid black;
-  padding: 10px 10px 20px 15px;
+  padding: 10px 10px 20px 10px;
 }
 .card:hover{
   background-color: white;
   color: black;
 }
 .card .p-detail h2{
-  text-align: left;
+  text-align: center;
   margin-left: 0;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 .card .p-detail{
   margin: 0 0;
@@ -59,6 +73,7 @@ font-family: 'Courier New', Courier, monospace;
 .item li{
   list-style:circle;
   margin: 2px 5px;
+  font-size: .9rem;
 }
 .p-detail h4{
   padding-left: 4px;
@@ -67,23 +82,26 @@ font-family: 'Courier New', Courier, monospace;
   list-style: none;
 }
 .img{
+  width: 100%;
+  display: flex;
+  justify-content: center;
   /* border: 2px solid black; */
 }
 .card img{
+  /* border: 2px solid red; */
   margin: 0 15px;
-  width: 60px;
+  width: 95%;
+  height: 120px;
   border-radius: 10px;
 }
-.card img{
-  width: 60px;
-}
+
 
 .card button a{
   color: white;
   
   /* border: 2px solid grey; */
 }
-.card  #link{
+.card  .link{
   margin-top: 30px;
   width: fit-content;
   text-decoration: none;
@@ -94,12 +112,14 @@ font-family: 'Courier New', Courier, monospace;
   background-color: #252525;
   color: white;
   margin-top: 10px;
+  font-size: .8rem;
   border-radius: 10px;
 
 }
 
 .p-detail a:hover{
 width: 100%;
+font-size: .9rem;
   color: black;
 }
 .card .p-detail ul{
@@ -115,28 +135,26 @@ width: 100%;
     padding: 0;
   }
   .project h2{
-    font-size: 1.5rem;
+    font-size: 1rem;
     margin: 10px;
   }
-  .project .p-card{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin: auto;
-    /* border: 2px solid red; */
-    gap: 30px;
 
-  }
   .project .item li{
     font-size: .9rem;
   }
-  .p-detail h2{
+  .project .p-detail h2{
     padding: 0;
-    margin-top: 0;
+    font-size: 1.3rem;
+    margin-top: 5px;
   }
-  .project .p.card .card{
-    width: 95%;
+  .project .card{
+    width: 80%;
     margin: auto;
-   
+  }
+  .card img{
+    /* width: 270px; */
+  }
+  .project a{
+    font-size: .9rem;
   }
 }

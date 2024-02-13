@@ -1,48 +1,51 @@
-.contact{
-    width: 80%;
-    margin: auto;
-    /* border: 2px solid red; */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;padding: 0;
+.contact {
+  width: 80%;
+  margin: auto;
+  position: relative;
+  top: 80px;
+  /* border: 2px solid red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
 }
-.contact h2{
-    font-size: 2rem;
-    margin-top: 20px;
+.contact h2 {
+  font-size: 2rem;
+  margin-top: 20px;
 }
-.form{
-    width: fit-content;
-    margin: 20px 0;
-    /* border: 2px solid white; */
+.form {
+  width: fit-content;
+  margin: 20px 0;
+  /* border: 2px solid white; */
 }
-.form  input,
+.form input,
 textarea {
   padding: 15px;
   border-radius: 0.5rem;
   width: 100%;
-  border: none; 
+  border: none;
   outline: none;
   background: rgb(45, 44, 44);
   margin-bottom: 1rem;
-  color:white;
+  color: white;
 }
 
-.form textarea{
-    padding: 15px;
-    border-radius: 0.5rem;
-    width: 100%;
-    border: none; 
-    outline: none;
-    background: rgb(45, 44, 44);
-    margin-bottom: 1rem;
-    color: white;
+.form textarea {
+  padding: 15px;
+  border-radius: 0.5rem;
+  width: 100%;
+  border: none;
+  outline: none;
+  background: rgb(45, 44, 44);
+  margin-bottom: 1rem;
+  color: white;
 }
 form textarea {
-    resize: none;
-    height: 200px;
-  }
-.form button{
+  resize: none;
+  height: 200px;
+}
+.form button {
   font-size: 18px;
   padding: 7px 30px;
   background: rgb(45, 44, 44);
@@ -50,41 +53,41 @@ form textarea {
   border-radius: 10px;
   border: 1px solid white;
 }
-.follow{
-    margin-top: 20px;
-    /* border: 2px solid black; */
-    text-align: center;
-    font-size: 1.2rem;
+.follow {
+  margin-top: 20px;
+  /* border: 2px solid black; */
+  text-align: center;
+  font-size: 1.2rem;
 }
-.follow ul{
-    display: flex;
-    flex-direction: row;
-    
+.follow ul {
+  display: flex;
+  flex-direction: row;
 }
-.follow ul li{
-    text-decoration: none;
-    list-style: none;
-   margin: 10px 2px;
-   padding: 5px;
-   color: white;
+.follow ul li {
+  text-decoration: none;
+  list-style: none;
+  margin: 10px 2px;
+  padding: 5px;
+  color: white;
 }
-.follow ul li img{
-    width: 40px;
+.follow ul li img {
+  width: 40px;
 }
-@media only screen and (max-width:767px){
-    .contact{
-        padding: 0;
-        width: 85%;
-    }
-    .contact h2{
-        font-size: 1.5rem;
-    }
-    .contact input,textarea{
-        width: 90%;
-        /* padding: 5px; */
-    }
-   .contact textarea{
+@media only screen and (max-width: 767px) {
+  .contact {
+    padding: 0;
+    width: 85%;
+  }
+  .contact h2 {
+    font-size: 1.5rem;
+  }
+  .contact input,
+  textarea {
+    width: 90%;
+    /* padding: 5px; */
+  }
+  .contact textarea {
     padding: 10px;
     width: 92%;
-   }
+  }
 }

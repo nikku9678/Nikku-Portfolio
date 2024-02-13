@@ -6,7 +6,6 @@ import About from './components/About/About'
 import Skills from './components/Skills/Skills'
 import Projects from './components/Projects/Projects'
 import Navbar from './components/Navbar/Navbar';
-import Acheivements from './components/Acheivements/Acheivements';
 import Homepage from './pages/Homepage/Homepage';
 import  Footer from './components/Footer/Footer';
 import Education from './components/Education/Education';
@@ -22,7 +21,6 @@ function App() {
         <Route path="/education" element={<Education />}/>
         <Route path="/skills" element={<Skills />}/>
         <Route path="/projects" element={<Projects />}/>
-        <Route path="/acheivements" element={<Acheivements />}/>
         <Route path="/contact" element={<Contact />}/>
 
       </Routes>

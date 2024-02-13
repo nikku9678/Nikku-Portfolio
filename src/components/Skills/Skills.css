@@ -1,12 +1,44 @@
 
 .skills {
   position: relative;
+  top: 80px;
   z-index: -1;
+  /* border: 2px solid rebeccapurple; */
+  padding: 3rem 0;
+}
+.skills .skill-list{
+  width: 60%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, auto));
+  justify-content: center;
+  gap: 15px;
+  margin-top: 1rem;
+  align-items: center;
+  /* border: 2px solid red; */
+  padding: 2rem;
+
+}
+.skill-card{
+  width:fit-content;
+  display: flex;
+  border-radius: 15px;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  /* border: 2px solid red; */
+}
+.skills .skill-card img{
+
+    width: 70px;
+    height: 70px;
+    padding: .5rem;
+
 }
 .skills .heading{
   text-align: center;
   font-size: 1.5rem;
-  margin: 20px;
+  margin: 0px;
 }
 .skills .swiper {
   width: 60%;
@@ -42,5 +74,14 @@
     width: 85%;
     border-radius: 10px;
     height: 500px;
+  }
+  .skills .skill-list{
+    width: 90%;
+    padding: .5rem 0;
+    grid-template-columns: repeat(auto-fit, minmax(90px, auto));
+  }
+  .skill-list .skill-card img{
+    width: 60px;
+    height: 60px;
   }
 }
