@@ -1,7 +1,6 @@
 import React from 'react'
 import Home from '../../components/Home/Home'
 
-import Homemenu from '../../components/Home/Homemenu'
 import Footer from '../../components/Footer/Footer'
 import About from '../../components/About/About'
 import Projects from '../../components/Projects/Projects'
@@ -17,29 +16,29 @@ function Homepage() {
   });
   return (
     <div className='homepage'>
-      {/* <div data-aos="zoom-out-down">
+      <div data-aos="fade-up">
       <Home/>
       </div>
-      <div data-aos="zoom-out-down">
+      <div data-aos="fade-up">
       <About/>
       </div>
-      <div  data-aos="zoom-out-down">
+      <div  data-aos="fade-up">
       <Education/>
       </div>
-      <div data-aos="zoom-out-down">
+      <div data-aos="fade-up">
       <Projects/>
       </div>
-      <div  data-aos="zoom-out-down">
+      <div  data-aos="fade-up">
       <Contact/>
       </div>
-      <Footer/> */}
-      <Home/>
+      <Footer/>
+      {/* <Home/>
       <About/>
       <Education/>
       <Projects/>
       <Skills/>
       <Contact/>
-      <Footer/>
+      <Footer/> */}
     </div>
   )
 }

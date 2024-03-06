@@ -21,10 +21,9 @@ top: 80px;
   border-radius: 50%;
 }
 .edu h1 {
-  text-align: center;
+  text-align: left;
   margin-top: 10px;
   padding: 5px;
-  font-size: 2rem;
   color: white;
 }
 .edu .school {
@@ -42,7 +41,7 @@ top: 80px;
   border-bottom: 2px solid black;
 }
 .school h2 {
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 .edu .school:hover {
   background-color: whitesmoke;
@@ -78,7 +77,7 @@ top: 80px;
     border-bottom: 2px solid black;
   }
   .edu h1 {
-    text-align: center;
+    text-align: left;
     margin-top: 10px;
     padding: 5px;
     font-size: 1.5rem;

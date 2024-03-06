@@ -19,16 +19,12 @@ function Home() {
           <h1>Nikku Kumar Das</h1>
           <div>
             <span> </span>
-            <span
-              style={{
-                fontSize: "1.3rem",
-                fontWeight: "normal",
-                color: "green",
-              }}
+            <span id="type-writer"
+             
             >
               <Typewriter
-                words={["Frontend Developer"]}
-                loop={2}
+                words={["Frontend Developer","Software Engineer","Tech Enthusiast"]}
+                loop={true}
                 cursor
                 cursorStyle="_"
                 typeSpeed={70}
@@ -73,6 +69,7 @@ function Home() {
               </a>
             </li>
           </ul>
+          <div className="home-links">
           <a
             href="https://drive.google.com/file/d/1dpMWliByMLFDaC9bBiIBVxYCdJua70gP/view?usp=drive_link"
             target="_blank"
@@ -80,6 +77,14 @@ function Home() {
           >
             Hire me
           </a>
+          <a
+            href="https://drive.google.com/file/d/1dpMWliByMLFDaC9bBiIBVxYCdJua70gP/view?usp=drive_link"
+            target="_blank"
+            className="btn"
+          >
+            Contact us
+          </a>
+          </div>
         </div>
       </section>
     </div>

@@ -12,22 +12,26 @@
   position: relative;
   top: 80px;
   width: 80%;
-  height: fit-content;
+  height: 60vh;
   margin: 40px auto;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   /* border: 1px solid white; */
   border-radius: 10px;
-  gap: 0;
+  gap: 20px;
   padding: 40px 20px;
   /* margin: auto; */
+}
+.home-links{
+  display: flex;
+  gap: 20px;
 }
 .home-img {
   width: 40%;
   margin: auto;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   /* border: 2px solid black; */
 }
 
@@ -35,6 +39,7 @@
   max-width: 320px;
   border-radius: 50%;
 }
+
 .home-text {
   width: 45%;
   display: flex;
@@ -45,11 +50,19 @@
   /* border: 2px solid green; */
 }
 .home-text span {
-  font-size: var(--medium-font);
-  font-weight: 500;
+  padding: 0px;
+  font-weight: 400;
+  font-size: 2rem;
 }
-
+#type-writer{
+  padding: 0;
+  margin-left: 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: yellow;
+}
 .home-text h1 {
+  padding: 5px 0;
   font-size: 3rem;
 }
 
@@ -71,7 +84,7 @@
 .home ul {
   display: flex;
   flex-direction: row;
-  gap: 10px;
+  gap: 5px;
   margin: 10px 0;
 }
 .home ul {
@@ -86,12 +99,12 @@
   color: white;
 }
 .home ul li img {
-  width: 40px;
+  width: 30px;
 }
 
 .home .btn {
   display: inline-block;
-  background: var(--main-color);
+  background-color: green;
   color: #fff;
 
   padding: 0.7rem 1.3rem;
@@ -101,71 +114,42 @@
 .btn:hover {
   background: var(--hover);
 }
-.sec-2 {
-  width: 80%;
-  margin: auto;
-  padding: 10px 20px;
-  height: fit-content;
-  border-radius: 10px;
-}
-.sec-2 .home-2 {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 1rem;
-  /* border: 2px solid red; */
-}
-.sec-2 .home-2 div {
-  max-width: 350px;
-  margin-top: 10px;
-  border-radius: 10px;
-  color: white;
-  box-shadow: 0 2px 2px 4px rgba(9, 9, 9, 0.23);
-  transition: all 500ms ease-in-out;
-  border-bottom: 2px solid black;
-}
-.home-2 div:hover {
-  margin-top: 5px;
-  cursor: pointer;
-  opacity: 1;
-  color: black;
-  background-color: white;
-  box-shadow: 0px 12px 30px 0px rgba(0, 0, 0, 0.2);
-  transition: all 800ms cubic-bezier(0.19, 1, 0.22);
-}
-.sec-2 .home-2 .project img {
-  width: 60px;
-  margin: 10px;
-  border-radius: 50%;
-}
-.sec-2 .home-2 .project {
-  padding: 5px 10px;
-}
-.sec-2 button {
-  margin: 10px 2px;
 
-  /* padding: 10px 15px; */
-}
-.sec-2 .project p {
-  font-size: 0.9rem;
-}
 
+
+@media only screen and (max-width: 900px) {
+  .home-img img {
+    width: 200px;
+  }
+  .home span{
+    margin:5px 0;
+    font-size: 1.3rem;
+  }
+  .home .home-text #type-writer{
+    font-size: .9rem;
+  }
+  .home-text h1 {
+    font-size: 2rem;
+  }
+}
 @media only screen and (max-width: 767px) {
   .home {
     width: 90%;
     flex-direction: column;
-    padding: 0;
+    padding:30px 0;
     gap: 10px;
+    height: fit-content;
     margin: 0 auto;
   }
   .home-img {
-    width: 60%;
+    width: 40%;
     justify-content: center;
     /* border: 2px solid red; */
     margin: 30px auto 0;
     /* background-color: green; */
+  }
+  .home #type-writer{
+    font-size: 1rem;
   }
   .home-text {
     margin: auto;
@@ -175,7 +159,7 @@
     /* border: 2px solid red; */
   }
   .home-img img {
-    max-width: 200px;
+    max-width: 170px;
     /* background-color: green; */
   }
   .home-text p {
@@ -189,23 +173,7 @@
   .home .btn {
     list-style: none;
     text-decoration: none;
+    background-color: green;
   }
 
-  .sec-2 {
-    margin: auto;
-    margin-top: 50px;
-    width: 85%;
-  }
-}
-
-@media only screen and (max-width: 900px) {
-  .home-img img {
-    width: 200px;
-  }
-  .home-text span {
-    font-size: 1.5rem;
-  }
-  .home-text h1 {
-    font-size: 2rem;
-  }
 }
