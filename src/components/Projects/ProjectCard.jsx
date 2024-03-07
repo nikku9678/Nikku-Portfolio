@@ -14,11 +14,15 @@ const ProjectCard = ({ tools, data, title, demo, github, Img }) => {
             <b>Tools used </b>: <span>{tools}</span>
           </p>
           <div className="item">
-            {data.map((item ,index) => (
-              <>
-                <li key={index}> {item}</li>
+            {data.map((item ,index) => 
+              {
+                return <>
+                <div key={index+1}> 
+                <li>{item}</li>
+                </div>
               </>
-            ))}
+              }
+            )}
             <div className="link-btn">
               <a className="link" href={`${demo}`} target="_blank">
                 view project

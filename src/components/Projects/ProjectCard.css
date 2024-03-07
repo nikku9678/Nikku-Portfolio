@@ -52,7 +52,7 @@ border-radius: 10px;
     padding: 5px 5px;
     /* border: 2px solid green;` */
   }
-  .item li {
+  .item div {
     /* list-style: circle; */
    margin-top: 5px;
     font-size: 1rem;

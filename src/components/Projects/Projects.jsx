@@ -10,20 +10,20 @@ function Projects() {
     <div className="project">
       <h1>Projects</h1>
       <div className="p-card">
-        {data.map((data, index) => (
-          <div key={index}>
-            <ProjectCard
-          Img={data.Img}
-            tools={data.tools}
-            
-            title={data.title}
-            demo={data.demo}
-            github={data.github}
-            data={data.description}
+        {data.map((data, index) =>{
+          return <div key={index}>
+          <ProjectCard
+        Img={data.Img}
+          tools={data.tools}
+          
+          title={data.title}
+          demo={data.demo}
+          github={data.github}
+          data={data.description}
 
-          />
-          </div>
-        ))}
+        />
+        </div>
+        })}
       </div>
     </div>
   );
