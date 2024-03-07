@@ -16,6 +16,7 @@ function Homepage() {
   });
   return (
     <div className='homepage'>
+ 
       <div data-aos="fade-up">
       <Home/>
       </div>
@@ -24,6 +25,9 @@ function Homepage() {
       </div>
       <div  data-aos="fade-up">
       <Education/>
+      </div>
+      <div  data-aos="fade-up">
+      <Skills/>
       </div>
       <div data-aos="fade-up">
       <Projects/>

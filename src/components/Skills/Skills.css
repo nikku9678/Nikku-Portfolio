@@ -2,12 +2,14 @@
 .skills {
   position: relative;
   top: 80px;
+  width: 80%;
+  margin: auto;
   z-index: -1;
   /* border: 2px solid rebeccapurple; */
   padding: 3rem 0;
 }
 .skills .skill-list{
-  width: 60%;
+  width: 90%;
   margin: auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(120px, auto));
@@ -36,9 +38,10 @@
 
 }
 .skills .heading{
-  text-align: center;
-  font-size: 1.5rem;
-  margin: 0px;
+  text-align: left;
+  font-size: 2rem;
+  margin: 20px;
+  padding: 10px;
 }
 .skills .swiper {
   width: 60%;
@@ -70,13 +73,11 @@
 }
 
 @media only screen and (max-width:767px) {
-  .skills .swiper {
-    width: 85%;
-    border-radius: 10px;
-    height: 500px;
+  .skills{
+    width: 90%;
   }
   .skills .skill-list{
-    width: 90%;
+    width: 100%;
     padding: .5rem 0;
     grid-template-columns: repeat(auto-fit, minmax(90px, auto));
   }

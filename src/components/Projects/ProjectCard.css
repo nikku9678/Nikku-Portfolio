@@ -1,20 +1,42 @@
 .card {    
-    border-bottom: 2px solid black;
+border-radius: 10px;
+    border-bottom: 1px solid goldenrod;
     width: 80%;
     margin: auto;
+    height: 250px;
     padding: 10px 20px;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-around;
     box-shadow: 0 2px 2px 4px rgba(9, 9, 9, 0.23);
     transition: all 500ms ease-in-out;
-    border-bottom: 2px solid black;
+    /* border: 2px solid red; */
+    /* From https://css.glass */
+    box-shadow: 0 2px 2px 4px rgba(9, 9, 9, 0.23);
+    transition: all 500ms ease-in-out;
+    animation: rotate linear 500ms ease;
+ 
+    /* */
 
   }
+  @keyframes rotate {
+    0%{
+      rotate: 0deg;
+    }
+    100%{
+      rotate: 360deg;
+    }
+    
+  }
+  .card:nth-child(2n){
+    /* background-color: green; */
+    flex-direction: row-reverse;
+  }
   .card:hover {
-    background-color: white;
-    color: black;
+    background-color: #6e59e8;
+    color: white;
   }
   .card .p-detail h2 {
     text-align: left;
@@ -22,10 +44,13 @@
     font-size: 1.3rem;
   }
   .card .p-detail {
-    width: 60%;
-    margin: 5px 5px;
-    padding: 5px 10px;
-    /* border: 2px solid green; */
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* margin: 10px 10px; */
+    padding: 5px 5px;
+    /* border: 2px solid green;` */
   }
   .item li {
     /* list-style: circle; */
@@ -39,44 +64,48 @@
     list-style: none;
   }
   .card .img {
-    width: 30%;
+    width: 35%;
+    height: 80%;
     display: flex;
     justify-content: center;
-    /* border: 2px solid black; */
+    /* border: 2px solid green; */
   }
   .card img {
     /* border: 2px solid red; */
-    margin: 0 15px;
-    max-width: 270px;
-    height: 160px;
+    /* margin: 0 15px; */
+   width: 100%;
+   /* max-height: 200px; */
     border-radius: 10px;
   }
   
   .card button a {
     color: white;
-  
-    /* border: 2px solid grey; */
+    padding: 5px;
   }
   .card .link {
-    margin-top: 30px;
+    margin-top: 20px;
     width: fit-content;
     text-decoration: none;
-    padding: 6px 15px;
+    padding: 10px 15px;
     display: flex;
-
+    transition: all 500ms ease-in-out;
     gap: 20px;
-    border: 1px solid grey;
-    background-color: #252525;
+    /* border: 1px solid grey; */
+    background-color: rgb(46, 52, 137);
     color: white;
-    margin-top: 10px;
-    font-size: 0.8rem;
+    font-size: 1rem;
     border-radius: 10px;
   }
-  
+  .card .link-btn{
+    display: flex;
+    justify-content: flex-start;
+    gap: 5px 10px;
+  }
   .p-detail a:hover {
-    width: 100%;
-    font-size: 0.9rem;
+    /* width: 100%; */
+    /* font-size: 0.9rem; */
     color: black;
+    background-color: yellow;
   }
   .card .p-detail ul {
     padding: 5px;
@@ -84,19 +113,27 @@
     margin-top: 5px;
   }
   
+
   @media only screen and (max-width:767px) {
     .card{
+      padding: 25px 20px;
         flex-direction: column;
+        height: fit-content;
+    }
+    .card:nth-child(2n){
+      /* background-color: green; */
+      flex-direction: column;
     }
     .card .img{
         width: 100%;
+        height: 100%;
     }
-    .card img{
-        height: auto;
+    .card .link-btn{
+      display: flex;
+      justify-content: center;
+      gap: 5px 15px;
     }
     .card .p-detail{
         width: 100%;
     }
-  
-    
   }

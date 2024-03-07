@@ -44,8 +44,8 @@ top: 80px;
   font-size: 1.2rem;
 }
 .edu .school:hover {
-  background-color: whitesmoke;
-  color: black;
+  background-color: royalblue;
+  color: white;
   transition: all 500ms ease-in-out;
   box-shadow: 0 2px 2px 2px rgba(37, 36, 36, 0.23);
   margin-top: 20px;
@@ -72,9 +72,9 @@ top: 80px;
     justify-content: flex-start;
     padding: 20px 20px;
     /* background-color: white; */
-    box-shadow: 0 2px 2px 4px rgba(9, 9, 9, 0.23);
+    /* box-shadow: 0 2px 2px 4px rgba(9, 9, 9, 0.23); */
     transition: all 500ms ease-in-out;
-    border-bottom: 2px solid black;
+    /* border-bottom: 2px solid black; */
   }
   .edu h1 {
     text-align: left;

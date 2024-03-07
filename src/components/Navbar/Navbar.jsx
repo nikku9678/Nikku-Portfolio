@@ -14,14 +14,20 @@ export default function Navbar() {
       <Link to="/" className="brand-name">
         Nikku
       </Link>
-      <button
-        className="hamburger"
+      <div className="hmg">
+      <input
+        id="checkbox" type="checkbox"
         onClick={() => {
           setIsNavExpanded(!isNavExpanded)
         }}
       >
-        {/* hamburger svg code... */}N
-      </button>
+      </input>
+      <label class="toggle" for="checkbox">
+        <div id="bar1" class="bars"></div>
+        <div id="bar2" class="bars"></div>
+        <div id="bar3" class="bars"></div>
+    </label>
+      </div>
       </div>
       <div
         className={

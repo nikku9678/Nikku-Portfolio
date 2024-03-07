@@ -1,6 +1,6 @@
 import React from "react";
-import './ProjectCard.css'
-const ProjectCard = ({index,tools,data,title,demo,github,Img}) => {
+import "./ProjectCard.css";
+const ProjectCard = ({ index, tools, data, title, demo, github, Img }) => {
   return (
     <>
       <div className="card" key={index}>
@@ -19,13 +19,7 @@ const ProjectCard = ({index,tools,data,title,demo,github,Img}) => {
                 <li> {item}</li>
               </>
             ))}
-            <div
-              style={{
-                display: "flex",
-                justifyContent: "flex-start",
-                gap: "5px 10px",
-              }}
-            >
+            <div className="link-btn">
               <a className="link" href={`${demo}`} target="_blank">
                 view project
               </a>

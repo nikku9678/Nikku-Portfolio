@@ -1,27 +1,17 @@
-:root {
-  --main-color: #033a80;
-  --bg-color: #fff;
-  --text-color: #0f0c27;
-  --hover: hsl(260, 100%, 51%);
-  --big-font: 3.2rem;
-  --medium-font: 1.8rem;
-  --p-font: 0.941rem;
-}
+
 .home {
+  background: url(../../../public/moon-2048727_1920.jpg  );
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   color: white;
   position: relative;
-  top: 80px;
-  width: 80%;
-  height: 60vh;
-  margin: 40px auto;
+  width: 100%;
+  height: 100vh;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
-  /* border: 1px solid white; */
-  border-radius: 10px;
-  gap: 20px;
-  padding: 40px 20px;
-  /* margin: auto; */
+  justify-content: center;
+  opacity: 0.9;
 }
 .home-links{
   display: flex;
@@ -32,6 +22,7 @@
   margin: auto;
   display: flex;
   justify-content: flex-end;
+  align-items: center;
   /* border: 2px solid black; */
 }
 
@@ -118,6 +109,12 @@
 
 
 @media only screen and (max-width: 900px) {
+  .home{
+    gap: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   .home-img img {
     width: 200px;
   }
@@ -134,18 +131,24 @@
 }
 @media only screen and (max-width: 767px) {
   .home {
-    width: 90%;
+    width: 100%;
     flex-direction: column;
-    padding:30px 0;
-    gap: 10px;
-    height: fit-content;
-    margin: 0 auto;
+    padding:0px;
+    gap: 0;
+    justify-content: center;
+    align-items: center;
+    height: 98vh;
+    margin: 0px auto;
+    /* border: 2px solid wheat; */
   }
   .home-img {
     width: 40%;
+    display: flex;
     justify-content: center;
     /* border: 2px solid red; */
-    margin: 30px auto 0;
+    margin: 130px auto -100px;
+    /* justify-content: flex-end; */
+  align-items: center;
     /* background-color: green; */
   }
   .home #type-writer{

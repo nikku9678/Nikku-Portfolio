@@ -9,7 +9,7 @@ function Contact() {
     <div>
       <div className="contact">
         <div>
-          <h2>Get in touch</h2>
+          <h1>Get in touch</h1>
         </div>
         <div className="form">
           <input type="text" placeholder="Name" />
@@ -26,7 +26,7 @@ function Contact() {
             placeholder="Message"
           ></textarea>
           <br />
-          <button>Submit</button>
+          <button className="btn-grad">Submit</button>
         </div>
         <div className="follow">
           <h3>Follow us</h3>
