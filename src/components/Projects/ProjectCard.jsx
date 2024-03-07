@@ -18,7 +18,7 @@ const ProjectCard = ({ tools, data, title, demo, github, Img }) => {
               {
                 return <>
                 <div key={index+1}> 
-                <li>{item}</li>
+                <li key={index+1}>{item}</li>
                 </div>
               </>
               }
