@@ -11,9 +11,9 @@ function Projects() {
       <h1>Projects</h1>
       <div className="p-card">
         {data.map((data, index) => (
-          <ProjectCard
+          <div key={index}>
+            <ProjectCard
           Img={data.Img}
-            index={index}
             tools={data.tools}
             
             title={data.title}
@@ -22,6 +22,7 @@ function Projects() {
             data={data.description}
 
           />
+          </div>
         ))}
       </div>
     </div>

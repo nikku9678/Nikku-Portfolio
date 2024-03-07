@@ -1,9 +1,9 @@
 import React from "react";
 import "./ProjectCard.css";
-const ProjectCard = ({ index, tools, data, title, demo, github, Img }) => {
+const ProjectCard = ({ tools, data, title, demo, github, Img }) => {
   return (
     <>
-      <div className="card" key={index}>
+      <div className="card">
         <div className="img">
           <img src={Img} alt="" />
         </div>
@@ -14,9 +14,9 @@ const ProjectCard = ({ index, tools, data, title, demo, github, Img }) => {
             <b>Tools used </b>: <span>{tools}</span>
           </p>
           <div className="item">
-            {data.map((item) => (
+            {data.map((item ,index) => (
               <>
-                <li> {item}</li>
+                <li key={index}> {item}</li>
               </>
             ))}
             <div className="link-btn">
