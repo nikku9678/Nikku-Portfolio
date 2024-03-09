@@ -6,6 +6,7 @@ import linkdImg from "../../assets/linkedin.png";
 
 import Img from "../../assets/nikku_image.jpg";
 import { Typewriter } from "react-simple-typewriter";
+import { Link } from "react-router-dom";
 
 function Home() {
   return (
@@ -77,13 +78,13 @@ function Home() {
           >
             Hire me
           </a>
-          <a
-            href="https://drive.google.com/file/d/1dpMWliByMLFDaC9bBiIBVxYCdJua70gP/view?usp=drive_link"
-            target="_blank"
+          <Link
+            to="/contact"
+           
             className="btn"
           >
             Contact us
-          </a>
+          </Link>
           </div>
         </div>
       </section>

@@ -20,7 +20,7 @@ function Homepage() {
       <div data-aos="fade-up">
       <Home/>
       </div>
-      <div data-aos="fade-up">
+      <div>
       <About/>
       </div>
       <div  data-aos="fade-up">

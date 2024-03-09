@@ -13,7 +13,7 @@
   padding: 0.5rem 0;
   z-index: 1;
   opacity: .8;
-  background-color: #121211;
+  background-image: radial-gradient(circle at 16% 83%, rgba(148, 148, 148,0.06) 0%, rgba(148, 148, 148,0.06) 50%,rgba(63, 63, 63,0.06) 50%, rgba(63, 63, 63,0.06) 100%),radial-gradient(circle at 68% 87%, rgba(66, 66, 66,0.06) 0%, rgba(66, 66, 66,0.06) 50%,rgba(105, 105, 105,0.06) 50%, rgba(105, 105, 105,0.06) 100%),radial-gradient(circle at 38% 50%, rgba(123, 123, 123,0.06) 0%, rgba(123, 123, 123,0.06) 50%,rgba(172, 172, 172,0.06) 50%, rgba(172, 172, 172,0.06) 100%),linear-gradient(90deg, hsl(18,0%,1%),hsl(18,0%,1%));
   font-weight: 400;
   color: white;
 
@@ -57,14 +57,14 @@
   /* border: 2px solid red; */
   padding: 7px 15px;
   border-radius: 10px;
-  transition: all 500ms ease-in-out;
+  transition: all 1000ms ease-in-out;
 }
 
 .navigation-menu li a:hover{
-  background-image: linear-gradient(to right, #25aae1, #4481eb, #04befe, #3f86ed);
+  background-color: royalblue;
     box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
-  border-bottom: 2px solid gold;
-  color: black;
+  /* border-bottom: 2px solid gold; */
+  color: white;
 
 }
 
@@ -162,8 +162,10 @@
   .navigation {
     /* opacity: 1; */
     height: 45px;
+    
   }
   .navigation .hmg{
+    transition: all 500ms ease-in-out;
     display: block;
   }
   .navigation-menu ul {
@@ -179,8 +181,8 @@
     left: 0;
     right: 0;
     flex-direction: column;
-
-    width: 99%;
+    
+    width: 80%;
     margin: auto;
     height: fit-content;
     border-radius: 10px;
@@ -202,14 +204,7 @@
     width: 100%;
     padding: 1rem 0;
   }
-  .navigation-menu li:hover {
-    background-color: #eee;
-    color: black;
-  }
-  .navigation-menu li a:hover {
-    background-color: #eee;
-    color: black;
-  }
+  
   .navigation-menu.expanded ul {
     display: block;
   }

@@ -38,7 +38,7 @@ top: 80px;
   /* background-color: white; */
   box-shadow: 0 2px 2px 4px rgba(9, 9, 9, 0.23);
   transition: all 500ms ease-in-out;
-  border-bottom: 2px solid black;
+  border-bottom: 1px solid gold;
 }
 .school h2 {
   font-size: 1.2rem;

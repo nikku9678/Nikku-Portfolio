@@ -2,20 +2,17 @@ import React, { useEffect, useState } from "react";
 import "./About.css";
 import Img from "../../assets/nikku_image.jpg";
 import { RingLoader } from "react-spinners";
+import AOS from "aos";
 
 function About() {
-  // const [loading,setLoading] =useState(false)
-
-  // useEffect(()=>{
-  //   setLoading(true)
-  //   setTimeout(() => {
-  //     setLoading(false)
-  //   }, 1000);
-  // },[])
+  AOS.init({
+    duration: 650,
+    // once: true
+  });
   return (
     <div>
-      <>
-        <div className="about">
+      <div className="abt" >
+        <div className="about" data-aos="fade-up">
           <div>
             <h1>About us</h1>
           </div>
@@ -42,7 +39,7 @@ function About() {
             </div>
           </div>
         </div>
-      </>
+      </div>
     </div>
   );
 }

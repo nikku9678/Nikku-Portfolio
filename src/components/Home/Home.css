@@ -1,6 +1,6 @@
 
 .home {
-  background: url(../../../public/moon-2048727_1920.jpg  );
+  /* background: url(../../../public/moon-2048727_1920.jpg  ); */
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -29,6 +29,13 @@
 .home-img img {
   max-width: 320px;
   border-radius: 50%;
+  transition: all 500ms ease-in-out;
+}
+.home-img img:hover {
+  max-width: 320px;
+  border-radius: 50%;
+  box-shadow: 0 4px 15px 0 rgba(252, 104, 110, 0.75);
+  scale: 1.08;
 }
 
 .home-text {
@@ -63,7 +70,6 @@
 }
 
 .home-text p {
-  font-size: var(--p-font);
   font-weight: 400;
   margin: 0.7rem 0 1rem;
 }
@@ -95,15 +101,16 @@
 
 .home .btn {
   display: inline-block;
-  background-color: green;
+  background-color: blueviolet;
   color: #fff;
-
+  transition: all 500ms ease-in-out;
   padding: 0.7rem 1.3rem;
-  border-radius: 0.5rem;
+  border-radius: 20px;
 }
 
-.btn:hover {
-  background: var(--hover);
+.home .btn:hover {
+  background: yellow;
+  color: black;
 }
 
 
@@ -117,6 +124,10 @@
   }
   .home-img img {
     width: 200px;
+  }
+  .home-img img:hover {
+    box-shadow: 0 4px 15px 0 rgba(252, 104, 110, 0.75);
+    scale: 1.02;
   }
   .home span{
     margin:5px 0;
@@ -165,6 +176,11 @@
     max-width: 170px;
     /* background-color: green; */
   }
+  .home-img img:hover {
+    box-shadow: 0 4px 15px 0 rgba(252, 104, 110, 0.75);
+    scale: 1.08;
+  }
+  
   .home-text p {
     text-align: center;
     /* border: 2px solid green; */
@@ -176,7 +192,6 @@
   .home .btn {
     list-style: none;
     text-decoration: none;
-    background-color: green;
   }
 
 }
